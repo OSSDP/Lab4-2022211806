@@ -37,6 +37,9 @@ public class Solution3Test {
         // 测试目的：验证方法在边界输入下的正确性
         // 用到的测试用例：空数组、只包含一个元素的数组
         Solution3 solution = new Solution3();
+        int[] nums1 = {};
+        List<Integer> result1 = solution.largestDivisibleSubset(nums1);
+        assertTrue(result1.isEmpty());
         int[] nums2 = {1};
         List<Integer> result2 = solution.largestDivisibleSubset(nums2);
         assertEquals(List.of(1), result2);
