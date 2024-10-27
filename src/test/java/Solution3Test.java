@@ -27,7 +27,7 @@ public class Solution3Test {
     public void testSingleLargestElement() {
         // 测试目的：验证当数组中存在一个元素远大于其他元素时的正确性
         // 用到的测试用例：包含一个远大于其他元素的数组
-        Solution3 solution = new Solution3();
+//        Solution3 solution = new Solution3();
         int[] nums = {1, 2, 3, 1000000000};
         List<Integer> result = solution.largestDivisibleSubset(nums);
         assertTrue(result.contains(1000000000) || result.containsAll(List.of(1, 2, 3)));
